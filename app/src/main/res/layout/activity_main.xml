@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7CEFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22-01-2003"
+            android:textSize="30dp"
+            android:id="@+id/date_view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0ml"
+            android:textSize="90dp"
+            android:textFontWeight="800"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/water_count"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 Sip"
+            android:textSize="40dp"
+            android:elevation="4dp"
+            android:translationZ="4dp"
+            android:backgroundTint="#77E4FF"
+            app:cornerRadius="40dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/sip_button"
+            android:width="200dp"
+            android:height="100dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250ml"
+            android:textSize="40dp"
+            android:backgroundTint="#4BD2FF"
+            android:layout_margin="10dp"
+            app:cornerRadius="40dp"
+            android:id="@+id/water250_button"
+            android:textColor="@color/black"
+            android:width="200dp"
+            android:height="100dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500ml"
+            android:textSize="40dp"
+            android:id="@+id/water500_button"
+            android:backgroundTint="#00ABFF"
+            android:layout_margin="10dp"
+            app:cornerRadius="40dp"
+            android:textColor="@color/black"
+            android:width="200dp"
+            android:height="100dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1l"
+            android:id="@+id/water1l_button"
+            android:textSize="40dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#009EEC"
+            app:cornerRadius="40dp"
+            android:textColor="@color/black"
+            android:width="200dp"
+            android:height="100dp"/>
+
+        <!--<com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="90dp"
+            android:id="@+id/undo_button"
+            app:cornerRadius="32dp"
+            android:textSize="20dp"
+            android:backgroundTint="#F44336"
+            android:width="100dp"
+            android:text="Undo"/>-->
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:textSize="24dp"
+            android:backgroundTint="#FF5C5C"
+            android:text="reset"
+            android:id="@+id/reset_button"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="50dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
